@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTROS CADASTRADOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <script type="text/javascript" src="indexController.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-secondary text-light mt-1">
+            <p class="my-2">REGISTROS CADASTRADOS</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6" style="text-align: left;">
+                <button type="button" onclick="listar()" class="btn btn-secondary my-3">LISTAR</button>
+            </div>
+    
+            <div class="col-lg-6" style="text-align: right;">
+                <button type="button" onclick="novo()" class="btn btn-secondary my-3">NOVO</button>
+            </div>
+        </div>
+
+        <div class="content" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>Cidade</th>
+                </thead>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="row">
+            <p id="data" style="text-align: right;"></p>
+        </footer>
+    </div>
+</body>
+</html>

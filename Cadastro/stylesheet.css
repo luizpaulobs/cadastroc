@@ -1,0 +1,42 @@
+input { background-color: rgb(230, 227, 227) }
+
+input:focus {
+    border-color: blue !important;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.aligntext {
+    text-align: right
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+th {
+    height: 40px;
+    text-align: left;
+    vertical-align: bottom;
+    background-color: #6c757d;
+    color: white;
+}
+
+td {
+    background-color: #ececec;
+}
